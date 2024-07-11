@@ -1,0 +1,23 @@
+label.tab_page_label{display:inline-block;}
+.padding_ver_20{padding:20px 0;}
+.padding_hor_20{padding:0 20px;}
+	
+input{box-sizing:border-box; height:20px; margin:2px 0; padding:2px; line-height:20px; font-size:12px;}	
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+   transition: background-color 5000s ease-in-out 0s;
+   -webkit-transition: background-color 9999s ease-out;
+   -webkit-box-shadow: 0 0 0px 1000px yellow inset !important;
+   -webkit-text-fill-color: #000 !important;
+}	
+input:-ms-autofill,
+input:-ms-autofill:hover,
+input:-ms-autofill:focus,
+input:-ms-autofill:active {
+   transition: background-color 5000s ease-in-out 0s;
+   -ms-transition: background-color 9999s ease-out;
+   -ms-box-shadow: 0 0 0px 1000px yellow inset !important;
+   -ms-text-fill-color: #000 !important;
+}

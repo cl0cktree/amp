@@ -1,0 +1,17 @@
+table {
+	font-size: 12px; /* 포인트(pt) 대신 픽셀(px) 단위 사용 */
+}
+label {
+	width: 120px; /* 단위 명확화 */
+	text-align: right;
+	padding-right: 5px; /* 단위 명확화 */
+	font-size: 12px; /* 포인트(pt) 대신 픽셀(px) 단위 사용 */
+}
+
+.middleLabel {
+	width: 60px; /* 단위 명확화 */
+}
+
+.smallLabel {
+	width: 40px; /* 단위 명확화 */
+}

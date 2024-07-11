@@ -1,0 +1,27 @@
+@font-face {
+	font-family: "Meiryo UI";
+	src: local(※),
+       url('./fonts/Meiryo_web/MeiryoUI-03.ttf') format('ttf');
+	font-weight: normal;
+}
+@font-face {
+	font-family: "Meiryo UI";
+	src: local(※),
+       url('./fonts/Meiryo_web/MeiryoUI-Italic-04.ttf') format('ttf');
+	font-weight: normal;
+	font-style:italic;
+}
+@font-face {
+	font-family: "Meiryo UI";
+	src: local(※),
+       url('./fonts/Meiryo_web/MeiryoUI-Bold-03.ttf') format('ttf');
+	font-weight: bold;
+    font-style:italic;
+}
+@font-face {
+	font-family: "Meiryo UI";
+	src: local(※),
+       url('./fonts/Meiryo_web/MeiryoUI-BoldItalic-04.ttf') format('ttf');
+	font-weight: bold;
+    font-style:italic;
+}

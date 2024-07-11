@@ -1,0 +1,20 @@
+1. 거래 코드 17010 데이터  에러 부분 트러블 슈팅 작업 진행
+  - selectSingleNode 부분 최신화 작업 진행.
+   -  selectNodes 부분 최신화 작업 진행.
+
+2.  거래 코드 17300 레이아웃 복원 및 수정 작업
+   -  label 에 class 부여 후 display:inline-block; 적용하여 본래 크기로 복원 되도록 수정함.
+   -  input 에 미적용 되었던 단위(px)를 적용하여 본래 크기로 복원 되도록 수정함(width,  height, margin).
+
+3.  거래 코드 12010 레이아웃 복원 및 수정 작업 중(01.jsp, 02.jsp)
+   -  label 에 class 부여 후 display:inline-block; 적용하여 본래 크기로 복원 되도록 수정함.
+   -  input 에 미적용 되었던 단위(px)를 적용하여 본래 크기로 복원 되도록 수정 중(width,  height, margin).
+   -  selectNodes 부분 최신화 작업 진행 중(02.jsp 완료).
+
+px
+ class="tab_page_label"
+
+selectSingleNode
+selectNodes
+
+"/table/record[@CODE_KIND = '729' and @CODE_5='"+<%= XmlUtil.nNullCheck(f259) %>+"' and @CODE_5 > 0 and (@STA=1 or @STA=2)]"

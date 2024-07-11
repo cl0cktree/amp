@@ -1,0 +1,47 @@
+1.   일괄적으로 하기 파일 input 에 width 를 4px 만큼 확장 및 필요 시 간격에 맞춰 그 이상 수치 부여 함.
+
+	- 거래 코드 17010 : 02.jsp
+        - 거래 코드 13300 : 02.jsp
+
+
+2.   css 작업 및 이슈 정리 문서 내부 항목 추가 작성  --?
+
+
+3.   grid 에 선택 부분에 대한 css 적용 가능한지 검토  --?
+
+
+4.   거래 코드 17010 레이아웃 복원 및 수정 작업
+        -  누락 됐던 02.jsp 에 포함 된 selectNodes 및 selectSingleNode 최신화 적용 작업 완료.
+        -  해당 부분에 대한 동작 확인이 필요함.
+
+
+5.     거래 코드 13300 레이아웃 복원 및 수정 작업
+        -  02.jsp 에 포함 된 selectNodes 및 selectSingleNode 최신화 적용 작업 완료.
+        -  해당 부분에 대한 동작 확인이 필요함.
+
+
+6.     왼쪽 메뉴바 leftMenu.jsp 중 makeTree(), makeSpan() 내부의 css 값을 조정하여, 컨탠츠 크기(메뉴 span의 width)에 따라 자동으로 x축의 스크롤바가 생성 되도록 개선함.
+
+        makeSpan() 개선 내용
+
+        obj.style.width = "400px"; → obj.style.width = "fit-content";
+
+        makeTree() 추가 내용
+
+        subMenu.style.minWidth = 184+'px';
+        subMenu.style.paddingRight = 4+'px';
+
+         - size 관련 추후 논의 필요.
+        
+
+
+ class="tab_page_label"
+
+
+px
+
+
+selectNodes
+
+selectSingleNode
+

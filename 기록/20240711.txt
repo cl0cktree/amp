@@ -1,0 +1,16 @@
+1.     css 작업 및 이슈 정리 문서 내부 항목 추가 작성  --?
+
+2.        background-color 지정해주는 예약 class(.back_gray_1, .back_white_1) 추가(templet.jsp 최하단 .dataform_content, main.jsp 메인 컨탠츠 표현부분 전체를 싸고 있는 td, main.jsp 메인 컨탠츠 표현 부분 name="contents"  의 iframe, 왼쪽 메뉴 부분 bgcolor="#ededed"  옆, leftmenu.jsp 최하단 body 부분에 적용).
+
+3.        "Meiryo UI", "Meiryo" 폰트를 전체에 대입하며 letter-spacing 을 -0.5로 지정.
+
+4.        상기 과정 중 leftmenu.jsp, main.jsp 에서 common.css 연결이 되지 않은 것을 발견 하여 common.css 파일 연결(<LINK REL="stylesheet" HREF="<%= request.getContextPath() %>/css/common.css" TYPE="text/css">).
+
+5.        최초 로그인시 왼쪽 메뉴바가 자동으로 열리고, 탑메뉴 클릭 시 왼쪽 메뉴가 열리도록 함수 open_left() 작성 및 적용.
+
+6.        간격 및 시인성이 Meiryo 가 더 좋다는 의견이 있어서 Meiryo 를 제일 먼저 로드 하도록 적용.
+
+7.        파란색 대체 색상 #86b7fe, 노란색 대체 색상 #FFC170(감귤색) , #FFFD70(기존과 비슷 하지만 미묘하게 채도가 낮음) 적용하여 샘플 페이지 제작(12010_ex03_02.html).
+
+
+

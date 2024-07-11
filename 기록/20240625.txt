@@ -1,0 +1,26 @@
+1.  templet.jsp 중 selectSingleNode 최신화 작업
+   - searchF3() 중 selectSingleNode 최신화 작업 완료.
+
+2.   거래 코드 13300 레이아웃 복원 및 수정 작업 중(01.jsp, 02.jsp, 03.jsp, 04.jsp 네번째 탭 부분 까지 진행)
+    -  label 에 class 부여 후 display:inline-block; 적용하여 본래 크기로 복원 되도록 수정함.
+   -  input 에 미적용 되었던 단위(px)를 적용하여 본래 크기로 복원 되도록 수정 중(width,  height, margin).
+    -    전체적인 스크립트 구조 변경이 예상되어 당분간 html 및 css 작업만 진행하기로 함.
+
+<style>
+	label.tab_page_label{display:inline-block;}
+	.padding_ver_20{padding:20px 0;}
+	.padding_hor_20{padding:0 20px;}
+	input{box-sizing:border-box;}
+</style>
+
+
+
+ class="tab_page_label"
+
+
+px
+
+
+selectNodes
+
+selectSingleNode

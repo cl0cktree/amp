@@ -1,0 +1,39 @@
+1.   거래 코드 13300 레이아웃 복원 및 수정 작업 중(01.jsp, 02.jsp, 03.jsp, 04.jsp 까지 진행)
+    -  label 에 class 부여 후 display:inline-block; 적용하여 본래 크기로 복원 되도록 수정함.
+     -  각 tag 에 미적용 되었던 단위(px)를 적용하여 본래 크기로 복원 되도록 수정 중(width,  height, margin, 등).
+       -   02.jsp의 세부 레이아웃 조정.
+       -   #tabPages 를 p 에서 div 로 변경(02.jsp, 04.jsp).
+    -  전체적인 스크립트 구조 변경이 예상되어 당분간 html 및 css 작업만 진행하기로 함.
+       -   하단에 세팅 된 iframe 들이 기본 border-width 가 적용되어, 사각형 점으로 노출 되던 부분에 인라인 style로 border:0 적용하여 노출 되지 않게 함(02.jsp, 04.jsp).
+       -  17010 및 현시점 까지의 작업에 모두 적용 예정.
+
+2.   main.jsp 주 데이터 표현 iframe 에 min-width : 936px; 적용 및 #leftMenuArea 를 감싸고 있는 td 에 box-sizing:border-box, min-width:200px 추가 적용.
+
+
+3.  거래코드 17010 하단 iframe 들이 기본 border-width 가 적용되어, 사각형 점으로 노출 되던 부분 확인
+    - 02.jsp 파일에 인라인 style로 border:0 적용하여 노출 되지 않게 처리 함.
+   
+
+4.  거래코드 12010 하단 iframe 들이 기본 border-width 가 적용되어, 사각형 점으로 노출 되던 부분 확인
+    - 02.jsp, 04.jsp, 05.jsp, 06.jsp 파일에 인라인 style로 border:0 적용하여 노출 되지 않게 처리 함.
+
+
+
+<style>
+	label.tab_page_label{display:inline-block;}
+	.padding_ver_20{padding:20px 0;}
+	.padding_hor_20{padding:0 20px;}
+	input{box-sizing:border-box;}
+</style>
+
+
+
+ class="tab_page_label"
+
+
+px
+
+
+selectNodes
+
+selectSingleNode

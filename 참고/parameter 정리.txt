@@ -1,0 +1,17 @@
+//정규식 {} => [] 변경
+var node_root = "/table/record[@DPT_CD ='"+top.iHeader["DPT_CD"]+"' and @TELR='"+code+"']";
+
+//document. or top.(db명), 1번째 요소 - 정규식, 2번째 요소 - db 명, 3번째 5번째는 null 고정, 
+//4번째는 singleNode 값 = FIRST_ORDERED_NODE_TYPE, nodes와 같은 리스트 값 = ORDERED_NODE_SNAPSHOT_TYPE 
+var node_xpath_1 = document.evaluate(node_root, top.TLMTELR, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null);
+
+// single node의 경우 아래처럼 node 아래 getAttribute사용해서 속성 값 가져오기
+var node = node_xpath_1.singleNodeValue
+document.all.f41Lbl.value = (node)? node.getAttribute("TELR_NAME"):"";
+
+// Nodes 같은 리스트의 경우 
+// children.snapshotLength 통해서 랭스 값 만큼 for 문 수행
+for(var j=0;j<children.snapshotLength;j++) {
+			var child = children.snapshotItem(j);
+			str += "<OPTION value='" + child.getAttribute("SUB_CODE") + "'>" + child.getAttribute("CODE_NAME") + "</OPTION>";
+		}
