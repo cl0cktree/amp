@@ -1,0 +1,253 @@
+@import url(./font.css);
+/* ---- 기본적인 tag 및 속성 set ---- */
+body{background-color:transparent!important; font-family:"Meiryo", "Meiryo UI"!important; letter-spacing:0px;}
+select{margin:2px 0!important;}
+input{box-sizing:border-box; height:20px; margin-top:2px!important; margin-bottom:2px!important; padding:2px; line-height:20px!important; font-size:12px!important;}
+input.login_size{width:360px!important; height:55px!important; }
+ul{position:relative; display:block; box-sizing:border-box; list-style:none;}
+ul li{box-sizing:border-box; display:block;}
+ul li>a{box-sizing:border-box; display:block;}
+table.data_table,table.data_table tr,table.data_table tr td{border-width:1px!important; border-color:#808080!important;}
+table.data_table tr td.xTitle{border:1px outset!important;}
+table.data_table.table_hover tr:hover{background-color:#ececec;}
+
+/* ---- --------------------- ---- */
+
+
+/* ---- 양쪽 맞춤 정렬 사용 시 각 행 및 구성 요소를 묶어 배치 하는데 사용 ---- */
+/* -- 행으로 요소를 묶는데 사용 -- */
+.wrap_row{position:relative; display:block; box-sizing:border-box; background:transparent; width:100%; border:0; padding:0; margin:0; font-size:0;}
+/* -- --------------------- -- */
+/* -- 짝지어 있는 label 및 input 을 행 안에 한 단위로 묶을 때 사용 -- */
+.wrap_row:after{content:""; position:relative; display:block; width:100%; height:0; clear:both;}
+/* -- 기본적인 구성으로 혼재되지 않은 layout 구성시에 적용 가능 -- */
+.wrap_row .row_05{position:relative; display:inline-block; box-sizing:border-box; width:calc(5% - 0.1px); font-size:12px;}
+.wrap_row .row_10{position:relative; display:inline-block; box-sizing:border-box; width:calc(10% - 0.1px); font-size:12px;}
+.wrap_row .row_15{position:relative; display:inline-block; box-sizing:border-box; width:calc(15% - 0.1px); font-size:12px;}
+.wrap_row .row_17{position:relative; display:inline-block; box-sizing:border-box; width:calc(17% - 0.1px); font-size:12px;}
+.wrap_row .row_20{position:relative; display:inline-block; box-sizing:border-box; width:calc(20% - 0.1px); font-size:12px;}
+.wrap_row .row_25{position:relative; display:inline-block; box-sizing:border-box; width:calc(25% - 0.1px); font-size:12px;}
+.wrap_row .row_30{position:relative; display:inline-block; box-sizing:border-box; width:calc(30% - 0.1px); font-size:12px;}
+.wrap_row .row_33{position:relative; display:inline-block; box-sizing:border-box; width:calc(33% - 0.1px); font-size:12px;}
+.wrap_row .row_34{position:relative; display:inline-block; box-sizing:border-box; width:calc(34% - 0.1px); font-size:12px;}
+.wrap_row .row_35{position:relative; display:inline-block; box-sizing:border-box; width:calc(35% - 0.1px); font-size:12px;}
+.wrap_row .row_40{position:relative; display:inline-block; box-sizing:border-box; width:calc(40% - 0.1px); font-size:12px;}
+.wrap_row .row_45{position:relative; display:inline-block; box-sizing:border-box; width:calc(45% - 0.1px); font-size:12px;}
+.wrap_row .row_50{position:relative; display:inline-block; box-sizing:border-box; width:calc(50% - 0.1px); font-size:12px;}
+.wrap_row .row_55{position:relative; display:inline-block; box-sizing:border-box; width:calc(55% - 0.1px); font-size:12px;}
+.wrap_row .row_60{position:relative; display:inline-block; box-sizing:border-box; width:calc(60% - 0.1px); font-size:12px;}
+.wrap_row .row_65{position:relative; display:inline-block; box-sizing:border-box; width:calc(65% - 0.1px); font-size:12px;}
+.wrap_row .row_66{position:relative; display:inline-block; box-sizing:border-box; width:calc(66% - 0.1px); font-size:12px;}
+.wrap_row .row_67{position:relative; display:inline-block; box-sizing:border-box; width:calc(67% - 0.1px); font-size:12px;}
+.wrap_row .row_70{position:relative; display:inline-block; box-sizing:border-box; width:calc(70% - 0.1px); font-size:12px;}
+.wrap_row .row_75{position:relative; display:inline-block; box-sizing:border-box; width:calc(75% - 0.1px); font-size:12px;}
+.wrap_row .row_80{position:relative; display:inline-block; box-sizing:border-box; width:calc(80% - 0.1px); font-size:12px;}
+.wrap_row .row_83{position:relative; display:inline-block; box-sizing:border-box; width:calc(83% - 0.1px); font-size:12px;}
+.wrap_row .row_85{position:relative; display:inline-block; box-sizing:border-box; width:calc(85% - 0.1px); font-size:12px;}
+.wrap_row .row_90{position:relative; display:inline-block; box-sizing:border-box; width:calc(90% - 0.1px); font-size:12px;}
+.wrap_row .row_95{position:relative; display:inline-block; box-sizing:border-box; width:calc(95% - 0.1px); font-size:12px;}
+.wrap_row .row_100{position:relative; display:block; box-sizing:border-box; width:100%; font-size:12px;}
+/* -- ------------------------------------------------ -- */
+/* -- 12/100 혹은 24/100 구성으로 혼재된 layout 구성시에 적용 가능 -- */
+.wrap_row .row_d12_08{display:inline-block; box-sizing:border-box; width:8.33%; font-size:12px;}
+.wrap_row .row_d12_16{display:inline-block; box-sizing:border-box; width:16.66%; font-size:12px;}
+.wrap_row .row_d12_24{display:inline-block; box-sizing:border-box; width:24.99%; font-size:12px;}
+.wrap_row .row_d12_29{display:inline-block; box-sizing:border-box; width:29.15%; font-size:12px;}/*4.16*/
+.wrap_row .row_d12_33{display:inline-block; box-sizing:border-box; width:33.32%; font-size:12px;}        
+.wrap_row .row_d12_37{display:inline-block; box-sizing:border-box; width:37.48%; font-size:12px;}/*4.16*/
+.wrap_row .row_d12_41{display:inline-block; box-sizing:border-box; width:41.65%; font-size:12px;}        
+.wrap_row .row_d12_45{display:inline-block; box-sizing:border-box; width:45.81%; font-size:12px;}/*4.16*/
+.wrap_row .row_d12_49{display:inline-block; box-sizing:border-box; width:49.98%; font-size:12px;}
+.wrap_row .row_d12_54{display:inline-block; box-sizing:border-box; width:54.14%; font-size:12px;}/*4.16*/
+.wrap_row .row_d12_58{display:inline-block; box-sizing:border-box; width:58.31%; font-size:12px;}
+.wrap_row .row_d12_62{display:inline-block; box-sizing:border-box; width:62.47%; font-size:12px;}/*4.16*/
+.wrap_row .row_d12_66{display:inline-block; box-sizing:border-box; width:66.64%; font-size:12px;}
+.wrap_row .row_d12_74{display:inline-block; box-sizing:border-box; width:74.97%; font-size:12px;}
+.wrap_row .row_d12_83{display:inline-block; box-sizing:border-box; width:83.3%; font-size:12px;}
+.wrap_row .row_d12_91{display:inline-block; box-sizing:border-box; width:91.63%; font-size:12px;}
+.wrap_row .row_d12_100{display:block; box-sizing:border-box; width:100%; font-size:12px;}
+/* -- ------------------------------------------ -- */
+
+/* -- --------------------------------------------------- -- */
+/* ---- --------------------------------------------------------- ---- */
+
+
+/* ---- 필요 시 독자적으로 사용 가능, 상단 양쪽 맞춤 정렬 시에도 혼합하여 사용 ---- */
+.white_nowrap{white-space:nowrap!important;}
+.text_left{text-align:left!important;}
+.text_center{text-align:center!important;}
+.text_right{text-align:right!important;}
+
+.margin_right_05{margin-right:5%!important;}
+.margin_right_10{margin-right:10%!important;}
+.margin_right_15{margin-right:15%!important;}
+.margin_right_16{margin-right:16%!important;}
+.margin_right_17{margin-right:17%!important;}
+.margin_right_20{margin-right:20%!important;}
+.margin_right_25{margin-right:25%!important;}
+
+/* -- 12/100 혹은 24/100 구성으로 혼재된 layout 구성시에 적용 가능 -- */
+.d12_right_04{margin-right:4.16%!important;}/*4.16*/
+.d12_right_08{margin-right:8.33%!important;}
+.d12_right_12{margin-right:12.49%!important;}/*4.16*/
+.d12_right_16{margin-right:16.66%!important;}
+.d12_right_20{margin-right:20.82%!important;}/*4.16*/
+.d12_right_24{margin-right:24.99%!important;}
+.d12_right_29{margin-right:29.15%!important;}/*4.16*/
+.d12_right_33{margin-right:33.32%!important;}
+.d12_right_37{margin-right:37.48%!important;}/*4.16*/
+.d12_right_41{margin-right:41.65%!important;}
+.d12_right_45{margin-right:45.81%!important;}/*4.16*/
+.d12_right_49{margin-right:49.98%!important;}
+.d12_right_54{margin-right:54.14%!important;}/*4.16*/
+/* -- ------------------------------------------------------ -- */
+
+/* ---- ------------------------------------------------------------ ---- */
+
+
+/* ---- 전반적으로 쓰이는 class로 layout 조작 시 편의성 증가를 위한 예약 선택자 set ---- */
+.width_fit{width:fit-content!important;}
+.width_130{width:130px!important;}
+
+.padding_top_20{padding-top:20px!important;}
+.padding_ver_20{padding:20px 0;}
+.padding_hor_20{padding:0 20px;}
+
+.back_gray_1{background-color:#ededed!important;}
+.back_gray_2{background-color:#7E7E7E!important;}
+.back_white_1{background-color:#fff!important;}
+.back_black_1{background-color:#000000!important;}
+.back_green_1{background-color:#4E8F38!important;}
+.back_green_2{background-color:#55ad46!important;}
+.back_blue_1{background-color:#00aeef!important;}
+
+.color_black_1{color:#000!important;}
+.color_white_1{color:#fff!important;}
+.color_green_1{color:#4E8F38!important;}
+.color_green_2{color:#55ad46!important;}
+
+.display_none{display:none!important;}
+/* ---- ------------------------------------------------------------------- ---- */
+
+
+/* ---- 각 지정 요소 조작을 위한 선택자 모음 ---- */
+table.frame_table_all{height:calc(100vh - 98px);}
+.dataform_content{padding-left:10px; padding-right:10px;}
+.TabPage{box-sizing:border-box; padding-right:5px;}
+label.tab_page_label{display:inline-block; padding-right:4px;}
+
+/*ul li.nav-item{margin-right:4px;}*/
+.nav-tabs .nav-item .nav-link{padding:2px 6px!important; font-size:13px!important;}
+
+/* -- topMenuArea 관련 선택자 모음 -- */
+#topMenuArea a.top_menu_btn{transition:all 0.1s ease-in-out;}
+#topMenuArea a.top_menu_btn.active{color:#5aaf47!important;}
+
+/* -- ------------------------- -- */
+
+/* -- TabUI 관련 선택자 모음(탭메뉴 무너지지않게 설정) -- */
+.TabUI{min-width:fit-content;}
+.TabUI>ul.nav{flex-wrap:nowrap!important; width:100%; min-width:1122px;}
+/* -- ------------------------------------------ -- */
+
+/* ---- ------------------------------- ---- */
+
+
+
+/* ---- 기능 버튼 가상 선택자 적용 ---- */
+button#NEW{position:relative; border-radius:2px; padding-left:28px;}
+button#NEW:before{content:"[F5]"; position:absolute; left:5px; top:1px; font-size:9px;}
+button#UPDATE{position:relative; border-radius:2px; padding-left:28px;}
+button#UPDATE:before{content:"[F6]"; position:absolute; left:5px; top:1px; font-size:9px;}
+button#DELETE{position:relative; border-radius:2px; padding-left:28px;}
+button#DELETE:before{content:"[F7]"; position:absolute; left:5px; top:1px; font-size:9px;}
+button#QUERY{position:relative; border-radius:2px; padding-left:28px;}
+button#QUERY:before{content:"[F8]"; position:absolute; left:5px; top:1px; font-size:9px;}
+button#TRANSACTION{position:relative; border-radius:2px; padding-left:28px;}
+button#TRANSACTION:before{content:"[F9]"; position:absolute; left:5px; top:1px; font-size:9px;}
+
+button#PRINT{position:relative; border-radius:2px;}
+/*
+button#PRINT{position:relative; border-radius:2px; padding-left:24px;}
+button#PRINT:before{content:"[???]"; position:absolute; left:6px; font-size:10px;}
+*/
+button.no_before{padding-left:5px!important;}
+button.no_before:before{content:""; display:none!important;}
+
+/* ---- -------------------- ---- */
+
+/* ---- 반응형 속성인 @media를 이용하여 창 크기에 맞춰 스크롤바 제어 ---- */
+body.body_scroll{padding-bottom:0px; overflow-x:auto; overflow-y:hidden;}
+iframe.iframe_scroll{border: none; width:100%; min-width:936px; height: calc(100vh - 181px); min-height:800px; margin-bottom:43px; overflow-x:hidden; overflow-y:auto;}/*height: calc(100vh - 138px);*/
+/*table.footer_float{position:static; width:100%; height:auto;}*/
+table.footer_float{position:fixed; width:100%; height:auto; bottom:0; left:0; right:0;}
+div.collapse.show .collapse-content{padding-bottom:12px!important;}
+@media all and (max-width:1600px){
+	body.body_scroll{overflow-x:visible;}
+	iframe.iframe_scroll{min-width:1160px; overflow-x:hidden;}
+	table.footer_float{position:fixed; width:100%; height:auto; bottom:0; left:0; right:0;}
+}
+@media all and (max-height:960px){
+	body.body_scroll{padding-bottom:43px; overflow-y:auto;}
+	iframe.iframe_scroll{overflow-y:auto;}
+	table.footer_float{position:fixed; width:100%; height:auto; bottom:0; left:0; right:0;}
+	div.collapse.show .collapse-content{padding-bottom:20px!important;}
+}
+@media all and (max-height:940px){
+	body.body_scroll{padding-bottom:43px; overflow-y:auto;}
+	iframe.iframe_scroll{overflow-y:auto;}
+	table.footer_float{position:fixed; width:100%; height:auto; bottom:0; left:0; right:0;}
+	div.collapse.show .collapse-content{padding-bottom:33px!important;}
+}
+@media all and (max-height:920px){
+	body.body_scroll{padding-bottom:43px; overflow-y:auto;}
+	iframe.iframe_scroll{overflow-y:auto;}
+	table.footer_float{position:fixed; width:100%; height:auto; bottom:0; left:0; right:0;}
+	div.collapse.show .collapse-content{padding-bottom:36px!important;}
+}
+@media all and (max-height:900px){
+	body.body_scroll{padding-bottom:43px; overflow-y:auto;}
+	iframe.iframe_scroll{overflow-y:auto;}
+	table.footer_float{position:fixed; width:100%; height:auto; bottom:0; left:0; right:0;}
+	div.collapse.show .collapse-content{padding-bottom:38px!important;}
+}
+/*
+@media all and (max-height:840px){
+	body.body_scroll{padding-bottom:43px; overflow-y:auto;}
+	iframe.iframe_scroll{overflow-y:auto;}
+	table.footer_float{position:fixed; width:100%; height:auto; bottom:0; left:0; right:0;}
+	.collapse.show .collapse-content{padding-bottom:40px!important;}
+}
+@media all and (max-height:780px){
+	body.body_scroll{padding-bottom:43px; overflow-y:auto;}
+	iframe.iframe_scroll{height: calc(100vh - 108px); overflow-y:auto;}
+	table.footer_float{position:fixed; width:100%; height:auto; bottom:0; left:0; right:0;}
+}
+*/
+/* ---- ------------------------------------------------------------------------- ---- */
+
+/* ---- bootstrap 및 기본 세팅 된 색상 강제 변경 ---- */
+.nav-tabs .nav-link.active{background-color:#d4d4d4!important;}
+/* ---- ------------------------------------ ---- */
+
+
+/* ---- 필수 입력 부분의 input 태그에 적용한 배경색이 자동완성이 켜져 있고, 그 값을 선택 할 경우 브라우저에서 지정한 기본 배경색으로 변경되는 문제 대응 ---- */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+   transition: background-color 5000s ease-in-out 0s;
+   -webkit-transition: background-color 9999s ease-out;
+   -webkit-box-shadow: 0 0 0px 1000px yellow inset !important;
+   -webkit-text-fill-color: #000 !important;
+}	
+input:-ms-autofill,
+input:-ms-autofill:hover,
+input:-ms-autofill:focus,
+input:-ms-autofill:active {
+   transition: background-color 5000s ease-in-out 0s;
+   -ms-transition: background-color 9999s ease-out;
+   -ms-box-shadow: 0 0 0px 1000px yellow inset !important;
+   -ms-text-fill-color: #000 !important; 
+}
+/* ---- ------------------------------------------------------------------------------------------------------------------------- ---- */
